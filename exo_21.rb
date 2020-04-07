@@ -3,9 +3,9 @@ print "> "
 number = gets.chomp.to_i
 i=number
 puts "voici la pyramide:"
-number.times do |i| 
+number.times do |number| 
     if(i>=0 && i<=25)
-        puts "#" + " "*i
+        puts " "*i + "#"*1
         i=i-1
     else
         puts "recommencez!"
