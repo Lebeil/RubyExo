@@ -1,0 +1,1 @@
+Ici le text pour coder Ruby
