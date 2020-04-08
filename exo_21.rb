@@ -34,17 +34,25 @@ end
 
 
 ###### AVEC WHILE #######
-# array = []
+# puts "merci de saisir un nombre entre 1 et 25 :"
+# chiffre = gets.chomp.to_i
+# n = chiffre
 
-# 50.times do |i|
-#   num = i + 1
-#   if num < 10 && num%2 == 0
-#     a = "jean.dupont.0#{num}@email.fr"
-#     array << a
-#   elsif num >=10 && num%2 == 0
-#     a = "jean.dupont.#{num}@email.fr"
-#     array << a
+# while n != 0 && n <= 25
+#   chiffre.times do |i|
+#     num = i + 1
+#     espace = chiffre - num
+#     espace.times do |i|
+#       print " "
+#     end
+#     num.times do |i|
+#       print "#"
+#     end
+#     puts
+#     n = n - 1
 #   end
 # end
 
-# puts array
+# if n > 25
+#   puts "TU TE FOU DE MA GUEULE !"
+# end
