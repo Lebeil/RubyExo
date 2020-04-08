@@ -1,15 +1,14 @@
-puts "Quel est ton année de naissance?"
+puts "Quel âge avez-vous ?"
 print "> "
-user_year = gets.chomp.to_i
-i=user_year
-age=0
-agee=2020-user_year
-while i <= 2020 do 
-  puts "Il y a " + "#{agee}" + "ans" + ", tu avais " + "#{age}" + "ans"
-  i=i+1
-  agee=agee-1
-  age=age+1
-  if age==agee
-    puts "Il y a " + "#{agee}" + "ans, tu avais la moitié de l'âge que tu as aujourd'hui."
-  end
+age = gets.chomp.to_i
+
+puts "Il y a 0 ans, tu avais #{age} ans."
+age.times do |i|
+  num = i + 1
+  peace = age - num
+  if num != peace
+    puts "Il y a #{num} ans, tu avais #{age - num} ans."
+  else
+    puts "Il y a #{num} ans, tu avais la moitié de l'âge que tu as aujoud'hui"
+  end  
 end

@@ -1,8 +1,8 @@
-puts "Entre un nombre: "
+puts "Donne moi ton numéro fétiche"
 print "> "
-number = gets.chomp.to_i
-i=number
-number.times do 
-  puts "#{i-1}"
-  i=i-1
+numéro = gets.chomp.to_i
+
+puts numéro
+numéro.times do |i|
+  puts numéro-i-1
 end
